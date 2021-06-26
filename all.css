@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    color: #3F5D45;
+}
+a{
+    color: #3F5D45;
+    text-decoration: none;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.menu{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu a{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.menu a:hover{
+    background: #3f5d45;
+    color: #fff;
+}
+.banner{
+    margin-bottom: 60px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.type{
+    width: 300px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 65px;  
+}
+.type h2{
+    color: #EAF0ED;
+    background: #3f5d45;
+}
+.type li{
+    margin-bottom: -1px;
+}
+.type a{
+    display: block;
+    border: 1px solid #EAF0ED;
+}
+.type a:hover{
+    background: #eaf0ed;
+}
+.productList{
+    width: 620px;
+    margin-bottom: 30px;
+}
+.productListCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.productListCard img{
+    display: block;
+}
+.productListCard li{
+    width: 300px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.productList .tag{
+    position: absolute;
+    top: 0px;
+    left:20px;
+    writing-mode: vertical-rl;
+    color: #fff;
+    background: #3f5d45;
+    color: #EAF0ED;
+    padding: 10px;
+    font-size: 16px;
+}
+.productList i{
+    position: absolute;
+    top: 20px;
+    right:20px;
+}
+.dessetNamePrice{
+    line-height: 56px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border: 1px solid #EAF0ED;
+}
+.dessetNamePrice h2{
+    width: 173px;
+}
+.dessetNamePrice span{
+    width: 127px;
+    border-left: 1px solid #EAF0ED;
+    font-weight: bold;
+}
+.productListCard .cart{
+    font-size: 24px;
+    background: #EAF0ED;
+    color: #3f5d45;
+    line-height: 65px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+.page{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+}
+.pageNumber{
+    display: flex;
+    justify-content: space-between;
+}
+.pageNumber li{
+    width: 60px;
+    height: 60px;
+    margin-right: -1px;
+}
+.pageNumber a{
+    padding: 18px;
+    font-size: 20px;
+    color: #3F5D45;
+    display: block;
+    text-align: center;
+    border: 1px solid #EAF0ED;
+}
+.pageNumber a:hover{
+    background: #3F5D45;
+    color: #fff;
+}
+.email{
+    background: #3F5D45;
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+.emailSend{
+    display: flex;
+    justify-content: space-around;
+}
+.emailLeft{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.email h2{
+    font-size: 24px;
+    color: #EAF0ED;
+    margin-left: 20px;
+}
+.emailRight{
+    background: #fff;
+    width: 380px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.emailRight .fas{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px
+}
+.emailRight .fa-arrow-right{
+    width: 64px;
+    background: #FFE180;
+    text-align: center;
+}
+.footer{
+    background: #eaf0ed;
+    padding-top: 39px;
+    padding-bottom: 30px;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+}
+.contactLeft p{
+    margin-top: 116px;
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+.contactRightText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.contactRightText .vertical{
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    margin-bottom: 80px;
+}
